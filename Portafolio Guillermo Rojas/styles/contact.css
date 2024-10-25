@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.contact__container {
+    width: 100%;
+    height: 86vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.contact__info h1 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Dm sans", sans-serif;
+}
+
+.contact__info p {
+    font-size: 25px;
+    font-family: "Dm sans", sans-serif;
+}
+
+.contact__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card {
+    width: 350px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow:  10px 10px 0px black;
+}
+
+.card:nth-child(1) {
+    background: #2a55f6;
+}
+.card:nth-child(2) {
+    background: whitesmoke;
+}
+.card:nth-child(3) {
+    background: #2a55f6 ;
+}
+
+.card span {
+    font-size: 45px;
+    margin-top: 18px;
+    color: black;
+}
+
+
+.info__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.info__card h1 {
+    font-size: 20px;
+    font-family: "Dm sans", sans-serif;
+}
+
+.info__card p {
+    font-family: "Dm sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .contact__container{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+

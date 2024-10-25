@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.presentation__container{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    background: #0a001b;
+}
+
+.presentation__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 40%; 
+    height: 70vh;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.presentation__info h1 {
+    font-size: 70px;
+    color: white;
+    font-family: "Dm sans", sans-serif;
+}
+
+.presentation__info p {
+    font-size: 28px ;
+    color: white;
+    font-family: "Dm sans", sans-serif;
+}
+
+.img__container{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img__container img{
+    display: flex;
+    position: relative;
+    justify-content: start;
+    width: 400px;
+    right: 20%;
+    filter: drop-shadow(2px 2px 20px white);
+}
+
+.curve {
+    display: block;
+    margin-bottom: -4px;
+    background: #0a001b;
+    width: 100%;
+    height: 30vh;
+}
+
+.mywork__container {
+    background-color: white;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .work__presentation h1{
+    font-size: 60px;
+    font-family: "Dm sans", sans-serif;
+  }
+
+  .work__presentation p {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: "Dm sans", sans-serif;
+  }
+  
+  .mywork_cards h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Dm sans", sans-serif;
+  }
+  
+  .mywork_cards p {
+    font-size: 17px;
+    color: #333;
+    font-family: "Dm sans", sans-serif;
+  }
+
+  .mywork_cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 50px;
+    padding: 30px;
+  }
+
+  .card {
+    width: 400px;
+    height: 550px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    overflow: hidden;
+    box-shadow:  32px 32px 64px #7b7b7b;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+  }
+   .card img {
+    width: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-card {
+   margin-bottom: 50px;
+}
+
+.info-card p {
+  font-family: "Dm sans", sans-serif;
+}
+
+.card h1{
+    margin-bottom: 8px;
+    font-family: "Dm sans", sans-serif;
+}
+
+  .icons {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    bottom: 0;
+    font-size: 30px;   
+  }
+
+  .icons i {
+    color: black;
+  }
+
+  .curve-2 {
+    display: block;
+    margin-bottom: -4px;
+    background: #0a001b;
+    width: 100%;
+    height: 50vh;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: #0a001b;
+}
+
+.info-left p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: "Dm sans", sans-serif;
+}
+
+.info-right i {
+   font-size: 50px;
+   color: white;
+}
+
+
+@media  (max-width: 768px){
+    .presentation__container {
+        flex-direction: column;
+        height: auto;
+    }
+    .presentation__info{
+        width: 80%;
+        height: 70vh;
+    }
+
+    .img__container {
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .mywork__container{
+      flex-direction: column;
+      height: auto;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .info-right {
+        margin-top: 30px;
+    }
+}

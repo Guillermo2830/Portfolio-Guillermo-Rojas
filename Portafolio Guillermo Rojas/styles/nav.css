@@ -1,0 +1,141 @@
+.menu__container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #2a55f6 ;
+   padding: 40px;
+   
+   
+   
+}
+
+.menu__container h1 {
+    margin-left: 30px;
+    font-family: "Dm sans", sans-serif;
+    cursor: pointer;
+}
+
+.name {
+    color: black;
+    font-weight: bold;
+}
+
+.last__name {
+    color: white;
+    font-weight: bold;
+}
+
+.menu-contact-container{
+    display: flex;
+    gap: 80px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.menu li {
+ width: 160px;
+ list-style: none;
+ border-right: 3px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Dm sans", sans-serif;
+}
+.menu a:hover{
+    color: white;
+}
+
+.menu a:hover, .menu a.active {
+    color: white;
+}
+
+.contact {
+    margin-right: 0;
+}
+
+
+.contact li {
+    width: 200px;
+    height: 50px;
+    background: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow:  8px 8px 0px white;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Dm sans", sans-serif;
+}
+
+.contact.active li {
+    background: white;
+    box-shadow:  8px 8px 0px black;
+}
+
+.contact.active a {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-contact-container {
+        display: none; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2a55f6 ;
+        position: absolute;
+        top: 122px; 
+        right: 0px; 
+        width: 250px; 
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    .menu-contact-container.active {
+        display: flex;
+        z-index: 1;
+    }
+
+    .menu, .contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .menu__container h1 {
+        font-size: 18px;
+    }
+    
+}
+
